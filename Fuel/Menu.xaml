@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fuel.Menu"
+             BackgroundColor="#0C182D"
+             NavigationPage.HasNavigationBar="false">
+    
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="CAR MANAGER" FontSize="50" TextColor="White" FontAttributes="Bold" VerticalOptions="Start" HorizontalOptions="Center" Margin="0,50,0,0"/>
+
+        <Grid HorizontalOptions="Center" VerticalOptions="Start" RowSpacing="1" ColumnSpacing="10" Margin="0,50,0,0">
+
+            <Frame Grid.Column="0" Grid.Row="0" CornerRadius="20" BackgroundColor="#204179" Margin="10,10,0,0">
+                <StackLayout>
+                    <Label Text="Fuel calculatior" HorizontalOptions="Center" FontSize="20" TextColor="White" FontAttributes="Bold"/>
+                    <ImageButton Clicked="ImageButton_Clicked_2" Source="fuel.png"  Padding="15" HorizontalOptions="Fill" BackgroundColor="#204179" />
+
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Column="1" Grid.Row="0" CornerRadius="20" BackgroundColor="#204179" Margin="0,10,10,0">
+                <StackLayout>
+                    <Label Text="Insurance" HorizontalOptions="Center" FontSize="20" TextColor="White" FontAttributes="Bold"/>
+                    <ImageButton Clicked="ImageButton_Clicked_1" Source="insurance.png"  Padding="15" BackgroundColor="#204179" />
+               </StackLayout>
+            </Frame>
+            <Frame Grid.Column="0" Grid.Row="1" CornerRadius="20" BackgroundColor="#204179" Margin="10,10,0,0">
+                <StackLayout>
+                    <Label Text="Car parts" HorizontalOptions="Center" FontSize="20" TextColor="White" FontAttributes="Bold"/>
+                    <ImageButton Clicked="ImageButton_Clicked" Source="tools.png"  Padding="15" BackgroundColor="#204179" />
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fuel.repairs"
+             BackgroundColor="#0C182D"
+             NavigationPage.HasNavigationBar="false">
+    <StackLayout Margin="0,20,0,0">
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,0,10,10">
+            <Label Text="Exploitation parts" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <ScrollView>
+            <StackLayout>
+            
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="0" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="ENGINE TIMING GEAR" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="belt.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="10,0,0,0"/>
+                            <Entry x:Name="beltEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="beltDate"  VerticalOptions="Center" HorizontalOptions="End" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="1" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="AIR FILTER" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="airfilter.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="airEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10" />
+                            <DatePicker x:Name="airDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="2" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="FRONT SHOCK ABSORBER" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="amor.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="amorEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="amorDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="2" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="REAR SHOCK ABSORBER" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="amor.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="RamorEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="RamorDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="3" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="FRONT BRAKES" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="brake.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="brakeEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="brakeDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="3" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="REAR BRAKES" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="brake.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="RbrakeEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="RbrakeDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="4" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="ENGINE OIL" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="car.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="oilEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="oilDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="4" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="SPARKS" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="spark.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="sparkEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="sparkDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="4" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="WHEELS" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="wheel.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="wheelsEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="wheelsDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#204179" Grid.Column="0" Grid.Row="4" CornerRadius="10" Margin="10,0,10,0">
+                    <StackLayout>
+                        <Label Text="COOLANT" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,5,0,0">
+                            <Image Source="radiator.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" Margin="20,0,0,0"/>
+                            <Entry x:Name="coolantEntry" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" WidthRequest="100" Margin="20,0,0,10"/>
+                            <DatePicker x:Name="coolantDate" VerticalOptions="Center" Format="d MMM yyyy" Date="3 Jan 2022"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+            </StackLayout>
+        </ScrollView>
+
+
+        <StackLayout Orientation="Horizontal"  VerticalOptions="EndAndExpand" Margin="0,0,0,0" BackgroundColor="#0C182D" Padding="0,10,0,10">
+            <Button Text="Save" Clicked="Button_Clicked" HeightRequest="40" WidthRequest="250" TextColor="White" BackgroundColor="#3D476F"  HorizontalOptions="Start" Margin="10,0,0,0" CornerRadius="10"/>
+
+            <Frame VerticalOptions="End" HorizontalOptions="EndAndExpand" CornerRadius="10"  BackgroundColor="#3D476F" Padding="4" Margin="0,0,10,0">
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Remider" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="5,0,0,0"/>
+                    <Image Source="reminder.png" HeightRequest="40" WidthRequest="40"/>
+                </StackLayout>
+            </Frame>
+
+            
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>

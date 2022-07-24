@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fuel.Insurance"
+             BackgroundColor="#0C182D"
+             NavigationPage.HasNavigationBar="false">
+    <StackLayout>
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,10,10,0">
+            <Label Text="INSURANCE" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,20,10,0">
+            <StackLayout>
+                <Label Text="Policy number" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+                <Entry x:Name="PolicyNumberE" HorizontalOptions="CenterAndExpand" WidthRequest="400"/>
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,20,10,0">
+            <StackLayout>
+                <Label Text="Policy owner" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+                <Entry x:Name="PolicyOwnerE" HorizontalOptions="CenterAndExpand" WidthRequest="400"/>
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,20,10,0">
+            <StackLayout>
+                <Label Text="Vehicle" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+                <Entry x:Name="VehicleE" HorizontalOptions="CenterAndExpand" WidthRequest="400"/>
+            </StackLayout>
+        </Frame>
+        <Frame BackgroundColor="#204179" CornerRadius="10" Margin="10,20,10,0">
+            <StackLayout>
+                <Label Text="Duration of insurance" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="From" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="White" FontSize="15"/>
+                    <DatePicker TextColor="White" x:Name="FromDate" Margin="10,0,0,0" Format="d MMM yyyy" Date="3 Jan 2022" VerticalOptions="Center" />
+
+                    <Label Text="To" Margin="20,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="White" FontSize="15"/>
+                    <DatePicker TextColor="White" x:Name="ToDate" Margin="10,0,0,0" Format="d MMM yyyy" Date="3 Jan 2022" VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <StackLayout Orientation="Horizontal"  VerticalOptions="EndAndExpand" Margin="0,0,0,0" BackgroundColor="#0C182D" Padding="0,10,0,10">
+            <Button Text="Save" Clicked="Button_Clicked" HeightRequest="40" WidthRequest="250" TextColor="White" BackgroundColor="#3D476F"  HorizontalOptions="Start" Margin="10,0,0,0" CornerRadius="10"/>
+
+            <Frame  VerticalOptions="End" HorizontalOptions="EndAndExpand" CornerRadius="10"  BackgroundColor="#3D476F" Padding="4" Margin="0,0,10,0">
+
+                <StackLayout Orientation="Horizontal" >
+                    <Label Text="Remider" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="5,0,0,0" TextColor="white"/>
+                    <Image Source="reminder.png" HeightRequest="40" WidthRequest="40"/>
+                </StackLayout>
+            </Frame>
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

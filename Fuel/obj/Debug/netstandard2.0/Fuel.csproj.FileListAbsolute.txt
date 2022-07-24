@@ -1,0 +1,17 @@
+C:\Users\KozAd\source\repos\Fuel\Fuel\bin\Debug\netstandard2.0\Fuel.deps.json
+C:\Users\KozAd\source\repos\Fuel\Fuel\bin\Debug\netstandard2.0\Fuel.dll
+C:\Users\KozAd\source\repos\Fuel\Fuel\bin\Debug\netstandard2.0\ref\Fuel.dll
+C:\Users\KozAd\source\repos\Fuel\Fuel\bin\Debug\netstandard2.0\Fuel.pdb
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.csprojAssemblyReference.cache
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.AssemblyInfoInputs.cache
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.AssemblyInfo.cs
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.csproj.CoreCompileInputs.cache
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.dll
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\ref\Fuel.dll
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Fuel.pdb
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\repairs.xaml.g.cs
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Menu.xaml.g.cs
+C:\Users\KozAd\source\repos\Fuel\Fuel\obj\Debug\netstandard2.0\Insurance.xaml.g.cs

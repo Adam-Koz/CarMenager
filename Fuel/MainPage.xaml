@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fuel.MainPage"
+             BackgroundColor="#0C182D"
+             NavigationPage.HasNavigationBar="false">
+    <StackLayout  Margin="0,10,0,0">
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Frame BackgroundColor="#204179" Padding="24" CornerRadius="10" Margin="10,20,10,0">
+                <Label Text="Fuel calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Frame BackgroundColor="#204179" Padding="24" CornerRadius="10" Margin="10,10,10,0">
+                <StackLayout >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Consumption per 100 km" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                        <Entry x:Name="Consumption" Text="7" Keyboard="Telephone" WidthRequest="100" HorizontalTextAlignment="Center" TextColor="White"  VerticalOptions="Center" HorizontalOptions="StartAndExpand" ClearButtonVisibility="WhileEditing" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Price per liter" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                        <Entry x:Name="Price" Text="5,75" Keyboard="Telephone" WidthRequest="100" HorizontalTextAlignment="Center" TextColor="White" VerticalOptions="Center" HorizontalOptions="StartAndExpand" ClearButtonVisibility="WhileEditing" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#204179" Padding="24"  CornerRadius="10" Margin="10,10,10,0">
+                <Grid VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                    <Label Grid.Column="0" Grid.Row="0" Text="Cost of fuel" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="White"/>
+                    <Label Grid.Column="1" Grid.Row="0" Text="Capacity" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="White"/>
+                    <Label Grid.Column="2" Grid.Row="0" Text="Distance" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="White"/>
+
+                    <Entry x:Name="Cost"  Grid.Column="0" Grid.Row="1"  Keyboard="Telephone"  TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="200" HorizontalTextAlignment="Center" ClearButtonVisibility="WhileEditing" />
+                    <Entry x:Name="Capacity"  Grid.Column="1" Grid.Row="1"  Keyboard="Telephone" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start"  WidthRequest="200" HorizontalTextAlignment="Center" ClearButtonVisibility="WhileEditing" />
+                    <Entry x:Name="Distance"  Grid.Column="2" Grid.Row="1" Keyboard="Telephone" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start"  WidthRequest="200" HorizontalTextAlignment="Center" ClearButtonVisibility="WhileEditing" />
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+            <StackLayout Orientation="Horizontal"  VerticalOptions="EndAndExpand" Margin="0,0,0,0" BackgroundColor="#0C182D" Padding="0,10,0,10">
+                <Button Text="Oblicz" Clicked="Button_Clicked"  HeightRequest="40" WidthRequest="250" TextColor="White" BackgroundColor="#3D476F"  HorizontalOptions="StartAndExpand" Margin="10,0,0,0" CornerRadius="10"/>
+                <Button Text="reset"  Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#3D476F" Margin="0,0,10,0" HeightRequest="50" WidthRequest="90" VerticalOptions="End" HorizontalOptions="End"  CornerRadius="10"/>
+            </StackLayout>
+    </StackLayout>
+</ContentPage>
+
